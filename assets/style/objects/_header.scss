@@ -1,0 +1,26 @@
+.o-header {
+  background: #fffaff;
+  padding-top: 4px;
+
+  @include respond-to-up("lg") {
+    padding-top: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    @include respond-to-up("lg") {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.tvshow {
+  background: #000000;
+  padding-top: 25px;
+
+  @include respond-to-up("lg") {
+    padding-top: 75px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+
+    @include respond-to-up("lg") {
+      padding-top: 75px;
+      flex-direction: row;
+      gap: 120px;
+    }
+
+    &-img {
+      width: 100%;
+      margin-right: 40px;
+
+      @include respond-to-up("md") {
+        width: 50%;
+        margin: 0;
+      }
+
+      @include respond-to-up("lg") {
+        width: 440px;
+      }
+    }
+
+    &-content {
+      @include respond-to-up("lg") {
+        padding-right: 50px;
+      }
+
+      h2 {
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+
+        @include respond-to-up("lg") {
+            font-size: 54px;
+            line-height: 62px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #c1c1c1;
+
+        @include respond-to-up("lg") {
+            font-size: 18px;
+            line-height: 24px;
+            width: 70%;
+            margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

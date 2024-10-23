@@ -1,0 +1,38 @@
+.o-footer {
+  background: #000000;
+  padding: 16px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+
+      @include respond-to-up("lg") {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-right: 24px;
+
+      @include respond-to-up("lg") {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px;
+      }
+    }
+  }
+}
