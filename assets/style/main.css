@@ -493,11 +493,6 @@ body {
     padding: 158px 0;
   }
 }
-@media (min-width: 1200px) {
-  .match__text {
-    padding: 170px 0;
-  }
-}
 .match__text h1 {
   font-size: 42px;
   font-weight: 500;
