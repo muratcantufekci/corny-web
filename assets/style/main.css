@@ -392,6 +392,9 @@ body {
     padding-top: 30px;
   }
 }
+.o-header--white {
+  background: white;
+}
 .o-header__wrapper {
   display: flex;
   align-items: center;
@@ -742,4 +745,25 @@ body {
 .download__store img {
   width: 150px;
   height: 56px;
+}
+
+.policy {
+  margin-top: 60px;
+}
+.policy .o-container {
+  max-width: 1090px;
+}
+.policy h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+.policy p, .policy a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
