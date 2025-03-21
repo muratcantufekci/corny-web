@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Redirect</title>
+    <script>
+        // Cihazın işletim sistemini tespit et ve yönlendir
+        document.addEventListener("DOMContentLoaded", function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // Android cihaz tespit edildi
+                window.location.href = "https://play.google.com/store/apps/details?id=com.corny.cornyapp";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // iOS cihaz tespit edildi
+                window.location.href = "https://apps.apple.com/tr/app/corny-meet-your-movie-mate/id6683308093";
+            } else {
+                // Başka bir cihaz (örneğin masaüstü)
+                window.location.href = "https://apps.apple.com/tr/app/corny-meet-your-movie-mate/id6683308093";
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Yönlendiriliyorsunuz...</p>
+</body>
+</html>
